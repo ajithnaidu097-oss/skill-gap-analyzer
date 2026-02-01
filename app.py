@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # This pulls your API key safely from the cloud settings
-api_key = st.secrets["0652600120"]
+api_key = st.secrets["AIzaSyBzH8BQxSv-TzWIbAE2rgbqb4ruuuTEICY"]
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
