@@ -4,7 +4,7 @@ import google.generativeai as genai
 # This pulls your API key safely from the cloud settings
 api_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 st.title("🚀 AI Skill Gap Analyzer")
 role = st.text_input("Target Job Role")
